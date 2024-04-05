@@ -165,7 +165,7 @@ module MysqlCookbook
 
     def v57plus
       return false if version.split('.')[0].to_i < 5
-      return false if version.split('.')[1].to_i < 7
+      return false if version.split('.')[0].to_i == 5 && version.split('.')[1].to_i < 7
       true
     end
 
